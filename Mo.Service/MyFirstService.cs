@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MagicOnion;
 using MagicOnion.Server;
 using Mo.Service.Interface;
+using Model;
 
 namespace Mo.Service
 {
@@ -17,6 +18,11 @@ namespace Mo.Service
         {
             Logger.Debug($"Received:{x}, {y}");
             return await Task.FromResult(x + y);
+        }
+
+        public async UnaryResult<string> ObjToStr(Person person)
+        {
+            return await Task.FromResult(person.ToString());
         }
     }
 }

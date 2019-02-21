@@ -1,4 +1,5 @@
 ﻿using MagicOnion;
+using Model;
 
 namespace Mo.Service.Interface
 {
@@ -9,5 +10,7 @@ namespace Mo.Service.Interface
         // Return type must be `UnaryResult<T>` or `Task<UnaryResult<T>>`.
         // If you can use C# 7.0 or newer, recommend to use `UnaryResult<T>`.
         UnaryResult<int> SumAsync(int x, int y);
+
+        UnaryResult<string> ObjToStr(Person person);
     }
 }

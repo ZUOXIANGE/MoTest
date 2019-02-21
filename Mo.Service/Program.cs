@@ -18,7 +18,7 @@ namespace Mo.Service
             var server = new Server
             {
                 Services = { service },
-                Ports = { new ServerPort("localhost", 12345, ServerCredentials.Insecure) }
+                Ports = { new ServerPort("localhost", 78945, ServerCredentials.Insecure) }
             };
 
             // launch gRPC Server.

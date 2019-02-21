@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MessagePack">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\messagepack\1.7.3.4\lib\netstandard2.0\MessagePack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
